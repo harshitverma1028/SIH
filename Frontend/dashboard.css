@@ -1,0 +1,140 @@
+body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0a3d62;
+      padding: 12px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin-left: 24px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #f1c40f;
+    }
+    .dashboard-container {
+      display: flex;
+      flex: 1;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #1b4f72;
+      color: #fff;
+      padding-top: 30px;
+      flex-shrink: 0;
+      height: calc(100vh - 56px);
+    }
+    .sidebar h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f1c40f;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 14px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .sidebar ul li:hover {
+      background-color: #154360;
+    }
+    .sidebar ul li.active {
+      background-color: #0a3d62;
+    }
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    .main-content h2 {
+      color: #0a3d62;
+      margin-bottom: 20px;
+    }
+    .internships {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: #0a3d62;
+    }
+    .card p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #555;
+    }
+    .match-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #2ecc71;
+      color: #fff;
+      font-size: 14px;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+    .apply-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      background-color: #f1c40f;
+      color: #000;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .apply-btn:hover {
+      background-color: #d4ac0d;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a3d62;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
