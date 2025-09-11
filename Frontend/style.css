@@ -38,9 +38,14 @@ body {
     .navbar ul li a:hover {
       color: #f1c40f;
     }
+    .text{
+      background-color: #f9f9f9;
+      color: black;
+      font-weight: bolder;
+    }
     .hero {
       background: linear-gradient(rgba(10,61,98,0.8), rgba(10,61,98,0.8)),
-        url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/PM_Modi_2015.jpg/800px-PM_Modi_2015.jpg");
+        url("modiship.webp");
       background-size: cover;
       background-position: center;
       color: #fff;
