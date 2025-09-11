@@ -1,0 +1,212 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+#faq{
+  scroll-margin-top: 100px; 
+}
+
+    .faq-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0a3d62;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+      position: relative;
+      padding-right: 20px;
+    }
+
+    .faq-question::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      font-size: 20px;
+      transition: transform 0.3s;
+    }
+
+    .faq-question.active::after {
+      content: "-";
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      color: #555;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a3d62;
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  margin-left: 24px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #f1c40f;
+}
+
+/* Hero Section */
+.support-hero {
+  background: linear-gradient(rgba(10,61,98,0.8), rgba(10,61,98,0.8));
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+.support-hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.support-hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Support Section */
+.support-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.support-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0a3d62;
+}
+.support-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.support-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.support-card:hover {
+  transform: translateY(-5px);
+}
+.support-card h3 {
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+.support-card a {
+  color: #667eea;
+  text-decoration: none;
+}
+.support-card a:hover {
+  text-decoration: underline;
+}
+
+/* Support Form */
+.support-form {
+  padding: 60px 20px;
+  background: #f1f1f1;
+  text-align: center;
+}
+.support-form h2 {
+  margin-bottom: 20px;
+  color: #0a3d62;
+}
+.support-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.support-form input,
+.support-form textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+}
+.support-form button {
+  padding: 12px;
+  background: #0a3d62;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.support-form button:hover {
+  background: #08314e;
+}
+
+/* Footer */
+footer {
+  background: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
