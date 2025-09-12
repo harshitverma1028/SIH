@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="bot.js"></script>
   <nav class="navbar">
     <div class="logo">प्रशिक्षणम्-Internship Portal</div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="support.html">Support</a></li>
-      <li><a href="#contact">Contact Us</a></li>
       <li><a href="login.html">Login</a></li>
+      <li><a href="employee.html">For admin ></a></li>
     </ul>
   </nav>
    <div class="text"><marquee behavior="" direction="left" onmouseover="this.stop();" onmouseout="this.start();" >***** 1.Register here to see your eligibility for various internship program. 2.Upload your details. 3.Enroll in PM Internship program. 4.Internship Screening & Selection Ongoing! Check your dashboard, email, and SMS regularly. Confirm joining via the Internship tile on your dashboard. *****</marquee>
@@ -54,5 +55,52 @@
   <footer>
     <p>&copy; 2025 PM Internship Recommendation Portal | Designed by Team Synapse</p>
   </footer>
+
+  <!-- chatbot -->
+
+  <!-- Chatbot Button -->
+<div id="chatbot-btn">
+  💬
+</div>
+<div id="chatbot-box">
+  <div class="chat-header">AI Chatbot <span id="close-chat">✖</span></div>
+  <div class="chat-body" id="chat-body">
+    <p><b>Bot:</b> Hello! How can I help you today?</p>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chat-input" placeholder="Type your message...">
+    <button id="send-btn">➤</button>
+  </div>
+</div>
+
+
+<script>
+  const chatbotBtn = document.getElementById("chatbot-btn");
+  const chatbotBox = document.getElementById("chatbot-box");
+  const closeChat = document.getElementById("close-chat");
+  const sendBtn = document.getElementById("send-btn");
+  const chatBody = document.getElementById("chat-body");
+  const chatInput = document.getElementById("chat-input");
+
+  chatbotBtn.onclick = () => {
+    chatbotBox.style.display = "flex";
+  };
+
+  closeChat.onclick = () => {
+    chatbotBox.style.display = "none";
+  };
+
+  sendBtn.onclick = () => {
+    let msg = chatInput.value.trim();
+    if(msg){
+      chatBody.innerHTML += `<p><b>You:</b> ${msg}</p>`;
+      chatBody.innerHTML += `<p><b>Bot:</b> I will process '${msg}' soon!</p>`;
+      chatInput.value = "";
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }
+  };
+</script>
+
+
 </body>
 </html>

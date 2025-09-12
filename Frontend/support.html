@@ -14,10 +14,9 @@
       
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#about">About Us</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html">Register</a></li>
       <li><a href="support.html" class="active">Support</a></li>
-      <li><a href="index.html#contact">Contact Us</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="employee.html">For employers ></a></li>
     </ul>
   </nav>
   <section class="support-hero">
@@ -42,8 +41,8 @@
         <p>Visit our <a href="#faq">FAQ section</a> to find quick answers to common questions.</p>
       </div>
       <div class="support-card">
-        <h3>💬 Live Chat</h3>
-        <p>Use the <a href="chat.html">chat option </a>for instant support.</p>
+        <h3>💬 Back to home page</h3>
+        <p>Use this<a href="index.html"> home</a>to navigate to home page.</p>
       </div>
     </div>
   </section>
@@ -87,21 +86,6 @@
       <div class="faq-answer">You can reach out via the "Support" or "Contact Us" sections for queries or assistance.</div>
     </div>
   </div>
-
-  <script>
-    const questions = document.querySelectorAll('.faq-question');
-    questions.forEach(question => {
-      question.addEventListener('click', () => {
-        question.classList.toggle('active');
-        const answer = question.nextElementSibling;
-        if (answer.style.display === "block") {
-          answer.style.display = "none";
-        } else {
-          answer.style.display = "block";
-        }
-      });
-    });
-  </script>
 
   <footer>
     <p>&copy; 2025 PM Internship Recommendation Portal | Designed by Team Synapse</p>
