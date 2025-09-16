@@ -89,12 +89,12 @@
   // Fade in
   setTimeout(() => {
     logo.classList.add("visible");
-  }, 150);
+  }, 250);
 
   // Fade out after 2s
   setTimeout(() => {
     logo.classList.add("hide");
-  }, 1200);
+  }, 1800);
 
   // Remove from DOM after fade
   setTimeout(() => {
@@ -108,5 +108,54 @@ document.addEventListener("DOMContentLoaded", () => {
   initCarousel();
   initIntroLogo();
 });
+
+// why prashikshanam
+  const cards = document.querySelectorAll(".cards-container1 .card1");
+        let currentCardIndex = 0;
+        let animationInterval;
+
+        function showNextCard() {
+            // Remove 'active' and 'prev' classes from all cards
+            cards.forEach(card => {
+                card.classList.remove("active", "prev");
+            });
+
+            // Add 'prev' class to the card that was just visible
+            const previousCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+            cards[previousCardIndex].classList.add("prev");
+
+            // Add 'active' class to the new current card
+            cards[currentCardIndex].classList.add("active");
+
+            // Increment the index for the next cycle, using the modulo operator to loop back to 0
+            currentCardIndex = (currentCardIndex + 1) % cards.length;
+        }
+
+        // Function to handle the animation start/stop
+        function handleScroll() {
+            const section = document.getElementById("why");
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            // Check if the top of the section is in the viewport
+            if (sectionTop < windowHeight && sectionTop > -section.offsetHeight) {
+                // If not already running, start the animation
+                if (!animationInterval) {
+                    showNextCard(); // Show the first card immediately
+                    animationInterval = setInterval(showNextCard, 2000);
+ }
+            } else {
+                // If the section is out of the viewport, stop the animation
+                clearInterval(animationInterval);
+                animationInterval = null;
+            }
+        }
+
+        // Add the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+
+        // Also check on page load in case the section is already in view
+        window.addEventListener("DOMContentLoaded", handleScroll);
+
 
 

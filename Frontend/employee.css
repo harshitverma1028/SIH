@@ -8,7 +8,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #0e3b43;
+background-color: rgba(14, 59, 67,0.8);
       padding: 12px 40px;
       position: sticky;
       top: 0;
@@ -99,3 +99,44 @@
       padding: 15px;
       margin-top: 40px;
     }
+
+
+
+    .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#intro-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+  z-index: 2000;
+  pointer-events: none;
+}
+
+#intro-logo img {
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
+#intro-logo.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#intro-logo.hide {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
