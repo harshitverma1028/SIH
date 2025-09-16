@@ -24,7 +24,7 @@ body {
     .faq-container h2 {
       text-align: center;
       margin-bottom: 20px;
-      color: #0a3d62;
+      color: #0e3b43;
     }
 
     .faq-item {
@@ -76,7 +76,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0a3d62;
+  background-color: #0e3432;
   padding: 12px 40px;
   position: sticky;
   top: 0;
@@ -109,7 +109,7 @@ body {
 
 /* Hero Section */
 .support-hero {
-  background: linear-gradient(rgba(10,61,98,0.8), rgba(10,61,98,0.8));
+  background: linear-gradient(#0e3b43);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -204,7 +204,7 @@ body {
 
 /* Footer */
 footer {
-  background: #0a3d62;
+  background: #0e3b43;
   color: #fff;
   text-align: center;
   padding: 20px;
