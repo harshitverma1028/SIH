@@ -3,64 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard | PM Internship Portal</title>
+  <title>Dark Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="dashboard.css">
+ 
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">PM Internship Portal</div>
+    <div class="nav-left">
+      <div class="nav-logo">
+        <img src="prashikshanamm.jpg" alt="Prashikshanam Logo">
+      </div>
+      <div class="logo">प्रशिक्षणम् - Internship Portal</div>
+    </div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#about">About Us</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="index.html#support">Support</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="employee.html">For admin ></a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="employee.html">For Admin ></a></li>
     </ul>
   </nav>
-  <div class="dashboard-container">
-    <div class="sidebar">
-      <h3>My Panel</h3>
-      <ul>
-        <li class="active">Dashboard</li>
-        <li>Recommended Internships</li>
-        <li>My Applications</li>
-        <li>Profile</li>
-        <li>Support</li>
-      </ul>
-    </div>
-    <div class="main-content">
-      <h2>Recommended Internships</h2>
-      <div class="internships">
-        <div class="card">
-          <span class="match-badge">92% Match</span>
-          <h3>Data Science Intern</h3>
-          <p><b>Organization:</b> NITI Aayog</p>
-          <p><b>Location:</b> New Delhi</p>
-          <p><b>Skills:</b> Python, ML, Data Analysis</p>
-          <a href="#" class="apply-btn">Apply Now</a>
-        </div>
-        <div class="card">
-          <span class="match-badge">85% Match</span>
-          <h3>Cloud Computing Intern</h3>
-          <p><b>Organization:</b> Ministry of IT</p>
-          <p><b>Location:</b> Virtual</p>
-          <p><b>Skills:</b> AWS, Azure, Linux</p>
-          <a href="#" class="apply-btn">Apply Now</a>
-        </div>
-        <div class="card">
-          <span class="match-badge">78% Match</span>
-          <h3>Cybersecurity Analyst Intern</h3>
-          <p><b>Organization:</b> NIC</p>
-          <p><b>Location:</b> Hyderabad</p>
-          <p><b>Skills:</b> Network Security, Ethical Hacking</p>
-          <a href="#" class="apply-btn">Apply Now</a>
-        </div>
+
+  <div class="sidebar">
+    <br><br><br>
+    <ul>
+      <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+      <li><i class="fas fa-desktop"></i><a href="application.html" style="text-decoration: none; color: black;">Application</a></li>
+      <li><i class="fas fa-keyboard"></i>Profile</li>
+      <li><i class="fas fa-file-alt"></i>Recommended Internships</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="cards">
+      <div class="card">
+        <span>Internships Available<br><strong>$1234</strong></span>
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <div class="card">
+        <span>Students Registered<br><strong>$1234</strong></span>
+        <i class="fas fa-chart-bar"></i>
+      </div>
+      <div class="card">
+        <span>Applications Pending<br><strong>$1234</strong></span>
+        <i class="fas fa-chart-area"></i>
+      </div>
+      <div class="card">
+        <span>Internships Filled<br><strong>$1234</strong></span>
+        <i class="fas fa-pie-chart"></i>
       </div>
     </div>
+
+    <div class="graph">
+      <h3>Worldwide Sales</h3>
+      <div style="height:200px; background-color:rgba(14, 59, 67,0.8); border-radius:8px; margin-top:10px;"></div>
+    </div>
+
+    <div class="calendar">
+      <h3>Calendar</h3>
+    </div>
   </div>
-  <footer>
-    <p>&copy; 2025 PM Internship Recommendation Portal | Designed by Team Synapse</p>
-  </footer>
+
 </body>
 </html>
