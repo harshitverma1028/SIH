@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadTranslations(lang) {
         try {
-            const response = await fetch(`${lang}.json`);
+            const response = await fetch(`json/${lang}.json`);
             if (!response.ok) {
                 throw new Error(`Could not load translations for language: ${lang}`);
             }
