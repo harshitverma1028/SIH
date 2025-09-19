@@ -45,7 +45,10 @@
       height: 80vh;
     }
     .login-box {
-      background: #fff;
+      background:linear-gradient(
+      rgba(14, 59, 67, 0.8), 
+      rgba(114, 137, 142, 0.8)
+    );
       padding: 40px;
       border-radius: 12px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.1);
@@ -68,7 +71,7 @@
     .login-box button {
       width: 100%;
       padding: 12px;
-      background-color: #f1c40f;
+      background-color:#9fd9e3;
       border: none;
       border-radius: 6px;
       font-size: 16px;

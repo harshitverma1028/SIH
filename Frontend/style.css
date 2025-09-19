@@ -32,6 +32,7 @@ body {
     .navbar ul li a {
       text-decoration: none;
       color:#cacecf;
+      font-weight: 600;
       font-size: 16px;
       transition: 0.3s;
     }
@@ -277,7 +278,7 @@ body {
 }
 
 #intro-logo.visible {
-  opacity: 1;
+  opacity: 0.6;
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -305,19 +306,15 @@ body {
   font-weight: bold;
   text-align: left;
 }
-
-/* Right half (cards container) */
 .cards-container1 {
   flex: 1;
   position: relative;
-  height: 450px;   /* fixed height for animation */
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-
-/* Each card */
 .card1 {
   width: 500px;
   height:300px;
@@ -331,19 +328,37 @@ body {
   background: linear-gradient(to top, #0e3b43, #888888);
   transition: all 0.8s ease-in-out;
 }
-
-/* Active card slides UP into view */
 .card1.active {
   opacity: 1;
   transform: translateY(0);
   z-index: 2;
 }
-
-/* Previous card slides UP and fades out */
 .card1.prev {
   opacity: 0;
   transform: translateY(-50px);
   z-index: 1;
 }
+
+/* language changer */
+
+
+.language-switcher {
+    margin-left: auto; 
+
+}
+
+#language-selector {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 

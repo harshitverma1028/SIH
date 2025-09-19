@@ -1,185 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PM Internship Recommendation Portal</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="chatbot.css">
-  <link rel="stylesheet" href="mediaquery.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Internship Recommendation Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
+
 <nav class="navbar">
-  <div class="nav-left">
-    <div class="nav-logo">
-      <img src="prashikshanamm.jpg" alt="Prashikshanam Logo">
+    <div class="nav-left">
+        <div class="nav-logo">
+            <img src="prashikshanamm.jpg" alt="Prashikshanam Logo">
+        </div>
+        <div class="logo" data-lang-key="logo_text">प्रशिक्षणम् - Internship Portal</div>
     </div>
-    <div class="logo">प्रशिक्षणम् - Internship Portal</div>
-  </div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="support.html">Support</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="employee.html">For Admin ></a></li>
-  </ul>
+    <ul>
+        <li><a href="index.html" data-lang-key="nav_home">Home</a></li>
+        <li><a href="#about" data-lang-key="nav_about">About Us</a></li>
+        <li><a href="support.html" data-lang-key="nav_support">Support</a></li>
+        <li><a href="login.html" data-lang-key="nav_login">Login</a></li>
+        <li><a href="employee.html" data-lang-key="nav_admin">For Admin ></a></li>
+        <li><div class="language-switcher">
+    <select id="language-selector">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+    </select>
+  </div></li>
+    </ul>
 </nav>
+
 <div id="intro-logo">
-  <img src="prashikshanamm.jpg" alt="Prashikshanam Intro Logo">
+    <img src="prashikshanamm.jpg" alt="Prashikshanam Intro Logo">
 </div>
 
-  <div class="text">
-    <marquee behavior="" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-      ***** 1.Register here to see your eligibility for various internship program. 
-      2.Upload your details. 3.Enroll in PM Internship program. 
-      4.Internship Screening & Selection Ongoing! 
-      Check your dashboard, email, and SMS regularly. Confirm joining via the Internship tile on your dashboard. *****
+<div class="text">
+    <marquee behavior="" direction="left" onmouseover="this.stop();" onmouseout="this.start();" data-lang-key="marquee_text">
+        ***** 1.Register here to see your eligibility for various internship program. 2.Upload your details. 3.Enroll in PM Internship program. 4.Internship Screening & Selection Ongoing! Check your dashboard, email, and SMS regularly. Confirm joining via the Internship tile on your dashboard. *****
     </marquee>
-  </div>
-  <section class="hero fade-in-up">
-    <h1>AI-Based Internship Recommendation Engine</h1>
-    <p>Empowering students with personalized internship opportunities under the Prime Minister’s Internship Scheme.</p>
-    <button onclick="window.location.href='dashboard.html'">Explore Internships</button>
-  </section>
-  <section class="section fade-in-left" id="about">
-    <h2>About Us</h2>
-    <p>
-      The PM Internship Recommendation Portal leverages Artificial Intelligence to connect students with the most suitable internships under the PM Internship Scheme. Our mission is to bridge the gap between skill and opportunity, ensuring that every student gets a fair chance to grow.
-    </p>
-  </section>
+</div>
 
+<section class="hero fade-in-up">
+    <h1 data-lang-key="hero_heading">AI-Based Internship Recommendation Engine</h1>
+    <p data-lang-key="hero_para">Empowering students with personalized internship opportunities under the Prime Minister’s Internship Scheme.</p>
+    <button onclick="window.location.href='dashboard.html'" data-lang-key="explore_btn">Explore Internships</button>
+</section>
+
+<section class="section fade-in-left" id="about">
+    <h2 data-lang-key="about_heading">About Us</h2>
+    <p data-lang-key="about_para">
+        The PM Internship Recommendation Portal leverages Artificial Intelligence to connect students with the most suitable internships under the PM Internship Scheme. Our mission is to bridge the gap between skill and opportunity, ensuring that every student gets a fair chance to grow.
+    </p>
+</section>
 
 <section class="section1" id="why">
-        <h2>Why Prashikshanam?</h2>
-
-        <div class="cards-container1">
-            <div class="card1">
-                <h3>Practical Training</h3>
-                <p>Best training programs designed to boost your career with real projects.</p>
-            </div>
-
-            <div class="card1">
-                <h3>Industry Experts</h3>
-                <p>Learn directly from industry experts who bring real-world knowledge.</p>
-            </div>
-
-            <div class="card1">
-                <h3>Internship Opportunities</h3>
-                <p>Get placed into internships with leading companies while you learn.</p>
-            </div>
-
-            <div class="card1">
-                <h3>Career Growth</h3>
-                <p>Practical sessions and strong mentorship to accelerate your career.</p>
-            </div>
+    <h2 data-lang-key="why_heading">Why Prashikshanam?</h2>
+    <div class="cards-container1">
+        <div class="card1">
+            <h3 data-lang-key="card1_heading">Practical Training</h3>
+            <p data-lang-key="card1_para">"Best training programs designed to boost your career with real projects. Gain hands-on experience, learn from industry experts, and build a strong portfolio to stand out in the job market."</p>
         </div>
-    </section>
+        <div class="card1">
+            <h3 data-lang-key="card2_heading">Industry Experts</h3>
+            <p data-lang-key="card2_para">Learn directly from industry experts who bring real-world knowledge and give you oportunities to work on real world problems.</p>
+        </div>
+        <div class="card1">
+            <h3 data-lang-key="card3_heading">Internship Opportunities</h3>
+            <p data-lang-key="card3_para">Get placed into internships with leading companies while you learn and have experience of working in top most companies.</p>
+        </div>
+        <div class="card1">
+            <h3 data-lang-key="card4_heading">Career Growth</h3>
+            <p data-lang-key="card4_para">Practical sessions and strong mentorship to accelerate your career, with guidance tailored to industry demands and future opportunities ,helping you gain confidence, real-world skills, and a competitive edge.</p>
+        </div>
+    </div>
+</section>
 
-  <section class="section fade-in-right">
-    <h2>Key Features</h2>
+<section class="section fade-in-right">
+    <h2 data-lang-key="features_heading">Key Features</h2>
     <div class="features">
-      <div class="feature-box fade-in-up">
-        <h3>AI-Powered Matching</h3>
-        <p>Smart recommendations based on skills, interests, and academic background.</p>
-      </div>
-      <div class="feature-box fade-in-up">
-        <h3>Government Backed</h3>
-        <p>Aligned with the Prime Minister’s Internship Scheme for credibility and trust.</p>
-      </div>
-      <div class="feature-box fade-in-up">
-        <h3>Easy Access</h3>
-        <p>Simple and intuitive platform designed for students across the nation.</p>
-      </div>
-      <div class="feature-box fade-in-up">
-        <h3>Support & Guidance</h3>
-        <p>Dedicated helpdesk and resources to guide students throughout their journey.</p>
-      </div>
+        <div class="feature-box fade-in-up">
+            <h3 data-lang-key="feature1_heading">AI-Powered Matching</h3>
+            <p data-lang-key="feature1_para">Smart recommendations based on skills, interests, and academic background.</p>
+        </div>
+        <div class="feature-box fade-in-up">
+            <h3 data-lang-key="feature2_heading">Government Backed</h3>
+            <p data-lang-key="feature2_para">Aligned with the Prime Minister’s Internship Scheme for credibility and trust.</p>
+        </div>
+        <div class="feature-box fade-in-up">
+            <h3 data-lang-key="feature3_heading">Easy Access</h3>
+            <p data-lang-key="feature3_para">Simple and intuitive platform designed for students across the nation.</p>
+        </div>
+        <div class="feature-box fade-in-up">
+            <h3 data-lang-key="feature4_heading">Support & Guidance</h3>
+            <p data-lang-key="feature4_para">Dedicated helpdesk and resources to guide students throughout their journey.</p>
+        </div>
     </div>
-  </section>
-  <section class="section fade-in-up" id="how-it-works">
-    <h2>How It Works</h2>
-    <p>Get started with just 3 simple steps and kickstart your internship journey.</p>
-    <div class="steps">
-      <div class="step-box fade-in-up">
-        <div class="step-icon">📝</div>
-        <h3>Step 1: Register</h3>
-        <p>Create your account and upload your skills, interests, and academic details.</p>
-      </div>
-      <div class="step-box fade-in-up">
-        <div class="step-icon">🤖</div>
-        <h3>Step 2: Get Matched</h3>
-        <p>Our AI engine recommends the best internship opportunities tailored to you.</p>
-      </div>
-      <div class="step-box fade-in-up">
-        <div class="step-icon">🚀</div>
-        <h3>Step 3: Apply & Start</h3>
-        <p>Apply directly, get selected, and start your journey towards growth.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section fade-in-up" id="stats">
-    <h2>We're good with numbers</h2>
-    <div class="stats">
-      <div class="stat-box">
-        <div class="stat-number" data-target="15000">0</div>
-        <div class="stat-label">🎓Students Placed</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-number" data-target="500">0</div>
-        <div class="stat-label">📄Internships Available</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-number" data-target="200">0</div>
-        <div class="stat-label">🏢Partner Companies</div>
-      </div>
-    </div>
-  </section>
+</section>
 
-  <section class="section fade-in-up" id="testimonials">
-    <h2>What Students Say</h2>
-    <div class="carousel">
-      <div class="carousel-track">
-        <div class="testimonial">
-          <p>"This portal made it so easy to find an internship that matches my skills. Highly recommended!"</p>
-          <h4>- Aditi Sharma, B.Tech CSE</h4>
+<section class="section fade-in-up" id="how-it-works">
+    <h2 data-lang-key="how_it_works_heading">How It Works</h2>
+    <p data-lang-key="how_it_works_para">Get started with just 3 simple steps and kickstart your internship journey.</p>
+    <div class="steps">
+        <div class="step-box fade-in-up">
+            <div class="step-icon">📝</div>
+            <h3 data-lang-key="step1_heading">Step 1: Register</h3>
+            <p data-lang-key="step1_para">Create your account and upload your skills, interests, and academic details.</p>
         </div>
-        <div class="testimonial">
-          <p>"The AI recommendations were spot on. I got an internship within a week of registering!"</p>
-          <h4>- Rajesh Kumar, MBA</h4>
+        <div class="step-box fade-in-up">
+            <div class="step-icon">🤖</div>
+            <h3 data-lang-key="step2_heading">Step 2: Get Matched</h3>
+            <p data-lang-key="step2_para">Our AI engine recommends the best internship opportunities tailored to you.</p>
         </div>
-        <div class="testimonial">
-          <p>"A user-friendly platform with genuine opportunities under the PM Internship Scheme."</p>
-          <h4>- Priya Verma, B.Sc IT</h4>
+        <div class="step-box fade-in-up">
+            <div class="step-icon">🚀</div>
+            <h3 data-lang-key="step3_heading">Step 3: Apply & Start</h3>
+            <p data-lang-key="step3_para">Apply directly, get selected, and start your journey towards growth.</p>
         </div>
-      </div>
-      <button class="carousel-btn prev">&#10094;</button>
-      <button class="carousel-btn next">&#10095;</button>
-      <div class="carousel-dots"></div>
     </div>
-  </section>
-  <footer class="fade-in-up">
-    <p>&copy; 2025 PM Internship Recommendation Portal | Designed by Team Synapse</p>
-  </footer>
-  <div id="chatbot-btn" title="Chat with PM InternBot">💬</div>
-  <div id="chatbot-box" aria-hidden="true">
+</section>
+
+<section class="section fade-in-up" id="stats">
+    <h2 data-lang-key="stats_heading">We're good with numbers</h2>
+    <div class="stats">
+        <div class="stat-box">
+            <div class="stat-number" data-target="15000">0</div>
+            <div class="stat-label" data-lang-key="stat1_label">🎓Students Placed</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label" data-lang-key="stat2_label">📄Internships Available</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number" data-target="200">0</div>
+            <div class="stat-label" data-lang-key="stat3_label">🏢Partner Companies</div>
+        </div>
+    </div>
+</section>
+
+<section class="section fade-in-up" id="testimonials">
+    <h2 data-lang-key="testimonials_heading">What Students Say</h2>
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="testimonial">
+                <p data-lang-key="testimonial1_text">"This portal made it so easy to find an internship that matches my skills. Highly recommended!"</p>
+                <h4 data-lang-key="testimonial1_author">- Aditi Sharma, B.Tech CSE</h4>
+            </div>
+            <div class="testimonial">
+                <p data-lang-key="testimonial2_text">"The AI recommendations were spot on. I got an internship within a week of registering!"</p>
+                <h4 data-lang-key="testimonial2_author">- Rajesh Kumar, MBA</h4>
+            </div>
+            <div class="testimonial">
+                <p data-lang-key="testimonial3_text">"A user-friendly platform with genuine opportunities under the PM Internship Scheme."</p>
+                <h4 data-lang-key="testimonial3_author">- Priya Verma, B.Sc IT</h4>
+            </div>
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+        <div class="carousel-dots"></div>
+    </div>
+</section>
+
+<footer class="fade-in-up">
+    <p data-lang-key="footer_text">&copy; 2025 PM Internship Recommendation Portal | Designed by Team Synapse</p>
+</footer>
+
+<div id="chatbot-btn" title="Chat with PM InternBot">💬</div>
+<div id="chatbot-box" aria-hidden="true">
     <div class="chat-header">
-      PM InternBot
-      <span id="close-chat" title="Close">✖</span>
+        PM InternBot
+        <span id="close-chat" title="Close">✖</span>
     </div>
     <div class="chat-body" id="chat-body"></div>
     <div class="chat-input">
-      <input type="text" id="chat-input" placeholder="Type your question (e.g., How to apply?)" />
-      <button id="send-btn" title="Send">➤</button>
+        <input type="text" id="chat-input" placeholder="Type your question (e.g., How to apply?)" />
+        <button id="send-btn" title="Send">➤</button>
     </div>
-  </div>
-
-  <script src="chatbot.js"></script>
-  <script src="script.js"></script>
-   
-
- 
-
-
-
+</div>
+<script src="chatbot.js"></script>
+<script src="script.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>
