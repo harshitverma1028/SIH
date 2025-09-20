@@ -6,7 +6,7 @@
     <title>PM Internship Recommendation Portal</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/chatbot.css">
-    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="css/mediaquery.css">
 </head>
 <body>
 <nav class="navbar">
@@ -21,7 +21,7 @@
         <li><a href="#about" data-lang-key="nav_about">About Us</a></li>
         <li><a href="support.html" data-lang-key="nav_support">Support</a></li>
         <li><a href="login.html" data-lang-key="nav_login">Login</a></li>
-        <li><a href="employee.html" data-lang-key="nav_admin">For Admin ></a></li>
+        <li><a href="employee.html" data-lang-key="nav_admin">For employer ></a></li>
         <li><div class="language-switcher">
     <select id="language-selector">
         <option value="en">English</option>
@@ -103,27 +103,50 @@
         </div>
     </div>
 </section>
-<section class="section fade-in-up" id="how-it-works">
-    <h2 data-lang-key="how_it_works_heading">How It Works</h2>
-    <p data-lang-key="how_it_works_para">Get started with just 3 simple steps and kickstart your internship journey.</p>
-    <div class="steps">
-        <div class="step-box fade-in-up">
-            <div class="step-icon">📝</div>
-            <h3 data-lang-key="step1_heading">Step 1: Register</h3>
-            <p data-lang-key="step1_para">Create your account and upload your skills, interests, and academic details.</p>
-        </div>
-        <div class="step-box fade-in-up">
-            <div class="step-icon">🤖</div>
-            <h3 data-lang-key="step2_heading">Step 2: Get Matched</h3>
-            <p data-lang-key="step2_para">Our AI engine recommends the best internship opportunities tailored to you.</p>
-        </div>
-        <div class="step-box fade-in-up">
-            <div class="step-icon">🚀</div>
-            <h3 data-lang-key="step3_heading">Step 3: Apply & Start</h3>
-            <p data-lang-key="step3_para">Apply directly, get selected, and start your journey towards growth.</p>
-        </div>
+
+
+
+
+<!--                                       how it works(steps)                                     -->
+
+
+
+  <div id="container">
+    <svg id="connections">
+      <defs>
+        <marker id="arrowhead" markerWidth="15" markerHeight="15" 
+                refX="12" refY="6" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L10,6 L0,12 Z" fill="black" stroke="black" stroke-width="1"/>
+        </marker>
+      </defs>
+    </svg>
+
+    <div class="box" id="box1">
+       <div class="step" data-lang-key="step_1">Step 1</div>
+       <div class="instruction" data-lang-key="step_1_para">Acknowledge the field you wish to work in</div>
     </div>
-</section>
+    
+    <div class="box" id="box2">
+      <div class="step" data-lang-key="step_2">Step 2</div>
+      <div class="instruction" data-lang-key="step_2_para">Complete your profile details</div>
+    </div>
+
+    <div class="box" id="box3">
+      <div class="step" data-lang-key="step_3">Step 3</div>
+      <div class="instruction" data-lang-key="step_3_para">Search using our filter for your internships</div>
+    </div>
+  
+    <div class="box" id="box4">
+      <div class="step" data-lang-key="step_4">Step 4</div>
+      <div class="instruction" data-lang-key="step_4_para">Get awesome results</div>
+    </div>
+  </div>
+
+
+
+<!--                                          we are good with numbers -->
+
+
 
 <section class="section fade-in-up" id="stats">
     <h2 data-lang-key="stats_heading">We're good with numbers</h2>
@@ -173,7 +196,7 @@
 <div id="chatbot-btn" title="Chat with PM InternBot">💬</div>
 <div id="chatbot-box" aria-hidden="true">
     <div class="chat-header">
-        PM InternBot
+        Your personal AI assistant
         <span id="close-chat" title="Close">✖</span>
     </div>
     <div class="chat-body" id="chat-body"></div>

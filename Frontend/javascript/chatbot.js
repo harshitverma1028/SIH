@@ -1,4 +1,3 @@
-
 const chatbotBtn = document.getElementById("chatbot-btn");
 const chatbotBox = document.getElementById("chatbot-box");
 const closeChat = document.getElementById("close-chat");
@@ -11,7 +10,7 @@ chatbotBtn.addEventListener("click", () => {
   chatbotBox.style.display = "flex";
   chatbotBtn.style.display = "none";
   chatbotBox.setAttribute("aria-hidden", "false");
-  addBotMessage("👋 Hello! I am PM InternBot. How can I assist you today?");
+  addBotMessage("👋 Hello! I am your personal AI assistant. How can I assist you today?");
 });
 
 // Close chatbot

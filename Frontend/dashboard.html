@@ -21,14 +21,14 @@
       <li><a href="#about">About Us</a></li>
       <li><a href="support.html">Support</a></li>
       <li><a href="login.html">Login</a></li>
-      <li><a href="employee.html">For Admin ></a></li>
+      <li><a href="employee.html">For employer ></a></li>
     </ul>
   </nav>
 
   <div class="sidebar">
     <br><br><br>
     <ul>
-      <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+      <li><i class="fas fa-tachometer-alt"></i><a href="dashboard.html" style="color: black; text-decoration: none;">Dashboard</a></li>
       <li><i class="fas fa-desktop"></i><a href="application.html" style="text-decoration: none; color: black;">Application</a></li>
       <li><i class="fas fa-keyboard"></i>Profile</li>
       <li><i class="fas fa-file-alt"></i>Recommended Internships</li>
@@ -56,13 +56,36 @@
     </div>
 
     <div class="graph">
-      <h3>Nationwide Internships</h3>
-      <div style="height:200px; background-color:rgba(14, 59, 67,0.8); border-radius:8px; margin-top:10px;"></div>
-    </div>
+       <h3>Students Enrolled</h3>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<canvas id="internChart" width="300" height="50"></canvas>
 
-    <div class="calendar">
-      <h3>Calendar</h3>
-    </div>
+<script>
+const ctx = document.getElementById('internChart').getContext('2d');
+const internChart = new Chart(ctx, {
+    type: 'bar', 
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+        datasets: [{
+            label: 'Applications Received',
+            data: [12, 19, 3, 5],
+            backgroundColor: '#0e3b43'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: { display: true },
+        }
+    }
+});
+</script>
+</div>
+
+
+  <div class="india">
+     <img src="india.jpg" alt="india">
+       <p> Just like this digital network map of India connects every city with light and technology, Prashikshanam envisions connecting learners across the nation with knowledge, skills, and opportunities. From Delhi to Chennai, Mumbai to Kolkata, Hyderabad to the North-East – every region holds untapped potential.With the power of digital training, mentorship, and innovation, Prashikshanam is creating a seamless learning ecosystem where skills travel faster than ever, opportunities reach every corner, and India grows stronger together.<br><br><br> <i class="fa-solid fa-moon"></i> Skill by Skill, City by City, India by India. </p> 
   </div>
 
 </body>

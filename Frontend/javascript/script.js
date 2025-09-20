@@ -139,6 +139,71 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+//     steps
+
+
+const container = document.getElementById('container');
+  const boxes = document.querySelectorAll('.box');
+  const svg = document.getElementById('connections');
+  let scrollTriggered = false;
+
+  function connectBoxes(b1, b2, delay = 0) {
+    const x1 = b1.offsetLeft + b1.offsetWidth / 2;
+    const y1 = b1.offsetTop + b1.offsetHeight / 2;
+    const x2 = b2.offsetLeft + b2.offsetWidth / 2;
+    const y2 = b2.offsetTop + b2.offsetHeight / 2;
+
+    const offset = 120;
+    const cx1 = (x1 + x2) / 2;
+    const cy1 = (y1 + y2) / 2 - offset;
+    const cx2 = (x1 + x2) / 2;
+    const cy2 = (y1 + y2) / 2 + offset;
+
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", `M ${x1},${y1} C ${cx1},${cy1} ${cx2},${cy2} ${x2},${y2}`);
+    path.setAttribute("stroke", "black");
+    path.setAttribute("stroke-width", "2.5");
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke-dasharray", "5 5"); 
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("marker-end", "url(#arrowhead)");
+
+    svg.appendChild(path);
+
+    // Animate drawing
+    const length = path.getTotalLength();
+    path.style.strokeDasharray = length; // solid length for animation
+    path.style.strokeDashoffset = length;
+
+    setTimeout(() => {
+      path.style.transition = "stroke-dashoffset 2s linear";
+      path.style.strokeDashoffset = "0";
+      // after animation, restore dotted look
+      setTimeout(() => {
+        path.style.strokeDasharray = "5 5";
+      }, 5000);
+    }, delay);
+  }
+
+  function redrawConnections() {
+    connectBoxes(boxes[0], boxes[1], 2000);     
+    connectBoxes(boxes[1], boxes[2], 3000);  
+    connectBoxes(boxes[2], boxes[3], 4000); 
+  }
+
+  window.addEventListener("scroll", () => {
+    if (!scrollTriggered && window.scrollY > 50) {
+      scrollTriggered = true; // only once
+      redrawConnections();
+    }
+  });
+
+
+
+        
+
+
+
         
 
 

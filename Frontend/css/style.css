@@ -112,46 +112,25 @@ body {
       margin-top: 40px;
     }
     .feature-box {
-      background: linear-gradient(rgba(14, 59, 67,0.6), rgba(14, 59, 67,0.6));
+      background: linear-gradient(rgba(14, 59, 67,1), rgb(185, 205, 208));
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: 0.3s;
-      color: #ccc;
-      font-weight: bold;
+      color: black;
+      font-weight: 500;
     }
     .feature-box:hover {
       transform: translateY(-5px);
     }
     .feature-box h3 {
-      color: #0a3d62;
+      color: #ffffff;
+      font-size: large;
       margin-bottom: 10px;
     }
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-    .step-box {
-      background: #fff;
-      padding: 30px 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-    .step-box:hover {
-      transform: translateY(-8px);
-    }
-    .step-icon {
-      font-size: 40px;
-      color: #f1c40f;
-      margin-bottom: 15px;
-    }
-    .step-box h3 {
-      color: #0a3d62;
-      margin-bottom: 10px;
-    }
+
+
+    
     .stats {
       display: flex;
       justify-content: center;
@@ -355,6 +334,94 @@ body {
     border-radius: 5px;
     font-size: 12px;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*                                                       steps */
+
+#container {
+  position: relative;
+  width: 900px;
+  height: 600px;
+  margin: 100px auto;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  width: 220px;
+  padding: 22px;
+  background: linear-gradient(135deg, rgb(14, 59, 67), #99f2c8);
+  background-size: 200% 200%;
+  color: #fff;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+.box:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 0 30px rgba(34, 129, 146, 0.4), 0 0 60px rgba(181, 212, 205, 0.6);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.step {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.instruction {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+/* Positioning */
+#box1 { top: 60px; left: 120px; }
+#box2 { top: 180px; right: 80px; }
+#box3 { bottom: 170px; left: 100px; }
+#box4 { bottom: 80px; right: 120px; }
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+path {
+  stroke:rgba(14, 59, 67, 0.8);
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 6 6;
+  stroke-linecap: round;
+  marker-end: url(#arrowhead);
 }
 
 
